@@ -1,0 +1,8 @@
+#Count and print the numbers that are either divisible by 3 or 5 or both, from 1 to 30.
+
+count = 0
+for i in range (0,31):
+    if i%3==0 or i%5==0 :
+        count += i
+        print (i,"=",count)
+print("Total amount:",count)
