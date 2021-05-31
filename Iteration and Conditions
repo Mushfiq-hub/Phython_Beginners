@@ -6,3 +6,63 @@ for i in range (0,31):
         count += i
         print (i,"=",count)
 print("Total amount:",count)
+
+#--------------------------------------------------------------------------------------
+
+#Find the maximum number among three numbers. [N.B: you do not know whether they are unique in value or not. Therefore, check all the possible conditions.]
+
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter a number: "))
+num3 = int(input("Enter a number: "))
+if num1 > num2 and num1 > num3:
+    max = num1
+elif num2 > num1 and num2 > num3:
+    max = num2
+else:
+    max = num3
+print("Maximum Number is: ",max)
+if max % 2!= 0 and max % 3!= 0:
+    print(max,"is a unique value.")
+else:
+    print(max,"is not a unique value.")
+    
+#--------------------------------------------------------------------------------------
+
+#BRAC UNIVERSITY has following rules for grading system: (a. Equal to or above 90 - A)
+#(b. Greater than or equal to 85 - less than or equal to 89 - A-) (c. Greater than or equal to 80 - less than or equal to 84 - B+) 
+#(d. Greater than or equal to 75 - less than or equal to 79 - B) (e. Greater than or equal to 70 - less than or equal to 74 - B-)
+#(f. Greater than or equal to 65 - less than or equal to 69 - C+) (g. Greater than or equal to 60 - less than or equal to 64 - C)
+#(h. Greater than or equal to 57 - less than or equal to 59 - C-) (i. Greater than or equal to 55 - less than or equal to 56 - D+)
+#(j. Greater than or equal to 52 - less than or equal to 54 - D) (k. Greater than or equal to 50 - less than or equal to 51 - D-)
+#(l. Less than 50 - F) Ask users to enter marks and print the corresponding grade.
+
+marks = int(input("Enter your marks: "))
+if marks < 50:
+    print("You got F.")
+elif marks >= 85 and marks <= 89:
+    print("You got A-.")
+elif marks >= 80 and marks <= 84:
+    print("You got B+.")
+elif marks >= 75 and marks <= 79:
+    print("You got B.")
+elif marks >= 70 and marks <= 74:
+    print("You got B-.")
+elif marks >= 65 and marks <= 69:
+    print("You got C+.")
+elif marks >= 60 and marks <= 64:
+    print("You got C.")
+elif marks >= 57 and marks <= 59:
+    print("You got C-.")
+elif marks >= 55 and marks <= 56:
+    print("You got D+.")
+elif marks >= 52 and marks <= 54:
+    print("You got D.")
+elif marks >= 50 and marks <= 51:
+    print("You got D-.")
+else:
+    print("You got A.")
+    
+#--------------------------------------------------------------------------------------
+
+#Determine whether a number is prime or not. [N.B. prime number is divisible by 1 and the number itself]
+
