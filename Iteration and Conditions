@@ -77,3 +77,9 @@ if num > 1:
        print(num,"is a prime number")  
 else:  
    print(num,"is not a prime number")
+   
+#--------------------------------------------------------------------------------------
+
+#Print all the fibonacci numbers from 0 - N, where N is a user defined number. ( Fibonacci numbers is a number which is the summation  of 
+#the previous two fibonacci numbers starting from 0. Like 0 1 1 2 3 5...)
+
